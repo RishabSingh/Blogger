@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/3243699c0d.js" crossorigin="anonymous"></script>
+
+    <style>
+        .error{
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            margin-left: 36px;
+        }
+    </style>
+    
+</head>
+<body class="font-body bg-cover" style="background-image: url(register.jpg);"  >
+
+    <div class="bg-white-500 bg-opacity-0 backdrop-filter backdrop-blur-[5px] rounded-xl block md:flex mt-0 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-min-h-[100px] w-fit-fit p-1 ">
+
+        <div class="bg-white w-60 h-min-h-[100px] rounded-xl  " style="background-image: url(tenor.gif);background-size:contain;background-repeat: no-repeat;">
+            <div class="pt-40 text-xs font-bold text-center p-7">
+                Welcome to our blogging corner, where words weave wonders and stories come to life! Whether you're a seasoned reader or a curious wanderer, we're thrilled to have you here.
+            </div>
+            <div>
+                <ul class="flex  ml-14 ">
+                    <li><div class="transform hover:scale-125 transition duration-300">
+                        <a href="#" target="blank" class="ml-3 text-blue-500 "><i class="fa-brands fa-facebook"></i></a>
+                    </div></li>
+                    <li><div class="transform hover:scale-125 transition duration-300">
+                        <a href="#" target="blank" class="ml-3 text-blue-600 "><i class="fa-brands fa-linkedin"></i></a>
+                    </div></li>
+                    <li><div class="transform hover:scale-125 transition duration-300">
+                        <a href="#" target="blank" class="ml-3 text-blue-400 "><i class="fa-brands fa-twitter"></i></a>
+                    </div></li>
+                    <li><div class="transform hover:scale-125 transition duration-300">
+                        <a href="#" target="blank" class="ml-3 text-pink-400 "><i class="fa-brands fa-instagram"></i></a>
+                    </div></li>
+            </div>
+           </div>
+        <div class="w-60 ">
+            <form id="frm2" action="/register" method="POST">
+                
+                    <label for="name" class=" absolute ml- mt-5 " ></label>
+                    <input name="username"  type="text"  placeholder="username" autocomplete="off"  class=" pl-5 mt-4 ml-8 w-44 text-xs p-2 rounded-md bg-slate-200 ">
+                    <span id="nameError" class="error" style="display: none;">Please enter your name.</span><br>
+                
+               
+                    <label for="username " class="absolute ml-5 mt-4"></label>
+    
+                    <input  name="username" type="text" placeholder="Username"  class=" pl-5 mt-3 ml-8 w-44 text-xs p-2 rounded-md bg-slate-200" >
+                    <span id="pasError" class="error" style="display: none;">Password should be greater the 5</span><br> 
+
+                     <label for="email" class="absolute ml-5 mt-4"></label>
+    
+                    <input  name="email" type="email" placeholder="Enter a valid email"  class=" pl-5 mt-3 ml-8 w-44 text-xs p-2 rounded-md bg-slate-200" >
+                    <span id="pasError" class="error" style="display: none;">Password should be greater the 5</span><br>
+
+                    <label for="Password " class="absolute ml-5 mt-4"></label>
+    
+                    <input  name="password" type="password" placeholder="Password" minlength="6" class=" pl-5 mt-3 ml-8 w-44 text-xs p-2 rounded-md bg-slate-200" >
+                    <span id="pasError" class="error" style="display: none;">Password should be greater the 5</span><br>
+               
+    
+                <div ><input type="submit" value="Sign in"  class=" mt-4 ml-8  w-44 text-xm p-2 bg-slate-700 rounded-md text-gray-300 hover:bg-gray-900 focus-ring focus:outline-none"> </input></div>
+                <div>
+                    <a href="#" class="text-xs ml-20 font-bold" >Forgot Password?</a>
+                </div>
+                <div><hr class="h-px  w-52 my-1 ml-5 bg-black border-0 dark:bg-gray-700">
+                    <div class="flex mt-3"><p class="text-xs pl-12">Don't have an account? </p><a href="#"class="text-xs font-bold"> Create one</a></div>
+                </div>
+            </form>
+            
+           
+        
+        </div>
+ 
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" ></script>
+    <script src="register.js"></script>
+</body>
+</html>

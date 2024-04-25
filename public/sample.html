@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Div Height</title>
+<!-- Include Tailwind CSS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="dynamicDiv" class="border p-4">
+  <p>This is some example content. You can add more content here and the div will adjust its height accordingly.This is some example content. You can add more content here and the div will adjust its height accordinglyThis is some example content. You can add more content here and the div will adjust its height accordingly</p>
+</div>
+
+<script>
+  // JavaScript to set min-height based on content
+  var dynamicDiv = document.getElementById("dynamicDiv");
+  dynamicDiv.style.minHeight = dynamicDiv.scrollHeight + "px";
+</script>
+
+</body>
+</html>

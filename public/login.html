@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <style>
+        .error{
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            margin-left: 17px;
+        }
+    </style>
+    
+</head>
+<body class="font-body m-0 p-0 bg-fixed">
+    <div id="container">
+        <nav class=" flex justify-between mr-10 ml-10">
+            <div id="icon">
+                <h1 class="text-black-00 font-bold p-2 text-xs underline underline-offset-2">BLOGGER</h1>
+            </div>
+            <div class="nav-links md:static md:min-h-fit absolute bg-white min-h-[10vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-4 h-fit   md:flex-grow text-black-400   ">
+                <ul class=" flex md:flex-row flex-col md:p-2  h-full text-xs md:pl-14 gap-2">
+                    <li class="md:pl-2 hover:underline"><a href="http://127.0.0.1:5502/public/login.html">HOME</a></li>
+                    <li class="md:pl-2 hover:underline" ><a href="http://127.0.0.1:5502/public/Allblog.html">BLOG</a></li>
+                    <li class="md:pl-2 hover:underline"><a href="http://127.0.0.1:5502/public/AboutUS.html">ABOUT</a></li>
+                    <li class="md:pl-2 hover:underline"><a href="http://127.0.0.1:5502/public/contact.html">CONTACT</a></li>
+               </ul>
+            </div>
+
+            <ul class="flex p-2 float-right">
+                <li id="login" class="text-black-400 text-xs hover:underline"><a href="#" onclick="toggleVisibility();">Log in</a></li>
+               <div class="h-fit w-fit bg-gray-700  ml-2 mr-2 rounded-xl hover:bg-gray-900 focus-ring focus:outline-none ">
+                   <li class="pl-2 pr-2 text-gray-400 text-xs "><a href="http://127.0.0.1:5502/public/register.html"><button >Get Started</button></a></li>
+               </div>
+               <ion-icon onclick="hamburger(this)" id="ham" name="menu-outline" class="text-xl cursor-pointer md:hidden"></ion-icon>
+            </ul>
+        </nav>
+
+        <header class="text-center mt-7">
+            <h1 class="text-3xl font-bold">OUR LATEST BLOGS</h1>
+            <P class="text-xs text-gray-400 mt-1.5">
+                Welcome to our blog haven, where creativity and inspiration collide.<br> 
+                Here, stories unfold, perspectives thrive, and words become the catalyst for connection.
+            </P>
+        </header>
+        
+        <div id="modal"  class=" mt-7 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white-500 bg-opacity-0 backdrop-filter backdrop-blur-[5px] p-5 rounded-md z-50 w-60 min-h-[100px] border border-gray-300 hidden ">
+            <h1 class="text-center font-bold underline underline-offset-4 ">Log in</h1>
+            <form id="frm">
+                <div class="relative text-gray-400 focus-within:text-gray-700">
+                    <label for="Password " class="absolute ml-5 mt-4"><i class="fa-solid fa-lock"></i></i></label>
+    
+                    <input  name="username" type="text" placeholder="Username" class=" pl-8 mt-3 ml-3 w-44 text-xs p-2 rounded-md bg-slate-200" >
+                    <span id="pasError" class="error" style="display: none;">Password should be greater the 5</span><br>
+                </div>
+                <div class="relative text-gray-400 focus-within:text-gray-700">
+                    <label for="Password " class="absolute ml-5 mt-4"><i class="fa-solid fa-lock"></i></i></label>
+    
+                    <input  name="password" type="password" placeholder="Password" minlength="6" class=" pl-8 mt-3 ml-3 w-44 text-xs p-2 rounded-md bg-slate-200" >
+                    <span id="pasError" class="error" style="display: none;">Password should be greater the 5</span><br>
+                </div>
+                
+    
+                <div ><input type="submit" value="Sign in"  class=" mt-4 ml-3  w-44 text-xm p-2 bg-slate-700 rounded-md text-gray-300 hover:bg-gray-900 focus-ring focus:outline-none"> </input></div>
+                <div>
+                    <a href="#" class="text-xs ml-14 font-bold" >Forgot Password?</a>
+                </div>
+                <div><hr class="h-px  w-54 my-3 bg-black border-0 dark:bg-gray-700">
+                    <div class="flex mt-5"><p class="text-xs pl-6">Don't have an account? </p><a href="#"class="text-xs font-bold"> Create one</a></div>
+                </div>
+            </form>
+           
+            
+        </div>
+
+        
+            
+        
+        <div class="container mx-auto px-4 pt-4 md:pt-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2">  <div class="card rounded-lg shadow-md overflow-hidden mr-2 ml-2 mt-4 mb-4"> <img src="first.png" alt="Card Image 1" class="w-full h-48 object-cover">  <div class="p-4">
+                  <h1 class="text-xs text-gray-400">by Rishab - March 2024</h1>
+                  <p class="text-xs font-bold">Exploring the Uncharted: <br> A Journey Through Hidden Gems</p>
+                  <button class="mt-2 inline-flex items-center px-3 py-1 text-xs font-medium text-center text-gray-400 bg-gray-700 rounded-lg hover:bg-gray-900 focus:ring focus:outline-none">Read me</button>
+                </div>
+              </div>
+              <div class="card rounded-lg shadow-md overflow-hidden mr-2 ml-2 mt-4 mb-4"> <img src="second.png" alt="Card Image 2" class="w-full h-48 object-cover">  <div class="p-4">
+                  <h1 class="text-xs text-gray-400">by Rishab - March 2024</h1>
+                  <p class="text-xs font-bold">Exploring the Uncharted: <br> A Journey Through Hidden Gems</p>
+                  <button class="mt-2 inline-flex items-center px-3 py-1 text-xs font-medium text-center text-gray-400 bg-gray-700 rounded-lg hover:bg-gray-900 focus:ring focus:outline-none">Read me</button>
+                </div>
+              </div>
+              <div class="card rounded-lg shadow-md overflow-hidden mr-2 ml-2 mt-4 mb-4"> <img src="third.jpg" alt="Card Image 3" class="w-full h-48 object-cover">  <div class="p-4">
+                  <h1 class="text-xs text-gray-400">by Rishab - March 2024</h1>
+                  <p class="text-xs font-bold">Exploring the Uncharted: <br> A Journey Through Hidden Gems</p>
+                  <button class="mt-2 inline-flex items-center px-3 py-1 text-xs font-medium text-center text-gray-400 bg-gray-700 rounded-lg hover:bg-gray-900 focus:ring focus:outline-none">Read me</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+        
+          
+          
+
+        <div class=" flex  items-center justify-center mt-8 mb-5  text-blue-500 text-center" ">
+            <a href="http://127.0.0.1:5502/public/Allblog.html" class=" flex gap-0.5 font-bold"  >Read More 
+                <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                  </svg> </a>
+            
+
+        
+    </div>
+    
+    <script>
+        function hamburger(e){
+            const NavLinks=document.querySelector(".nav-links");
+            e.name=e.name==='close' ? 'menu' : 'close';
+            NavLinks.classList.toggle('top-[8%]');
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>

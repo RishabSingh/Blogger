@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllBlog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/3243699c0d.js" crossorigin="anonymous"></script>
+    <script src="fav.js"></script>
+</head>
+<body class="font-body m-0 p-0 bg-fixed">
+    <div id="container" class="ml-14 mr-14">
+        <nav class="flex justify-between">
+            <div id="icon">
+                <h1 class="text-gray-700 font-bold p-2 text-xs underline underline-offset-2">BLOGGER</h1>
+            </div>
+            <div class="h-fit w-fit  flex-grow text-black-400   ">
+                <ul class="flex p-2  h-full text-xs pl-14">
+                    <li class="pl-2 hover:underline"><a href="http://127.0.0.1:5502/public/login.html#">HOME</a></li>
+                    <li class="pl-2 hover:underline" ><a href="http://127.0.0.1:5502/public/Allblog.html">BLOG</a></li>
+                    <li class="pl-2 hover:underline"><a href="http://127.0.0.1:5502/public/AboutUS.html">ABOUT</a></li>
+                    <li class="pl-2 hover:underline"><a href="http://127.0.0.1:5502/public/contact.html">CONTACT</a></li>
+               </ul>
+            </div>
+            <div>
+                <ul class="flex p-1  ">
+                    <li><div class="transform hover:scale-125 transition duration-300">
+                        <a href="#" target="blank" class="ml-3 text-blue-500 "><i class="fa-brands fa-facebook"></i></a>
+                    </div></li>
+                    <li><div class="transform hover:scale-125 transition duration-300">
+                        <a href="#" target="blank" class="ml-3 text-blue-600 "><i class="fa-brands fa-linkedin"></i></a>
+                    </div></li>
+                    <li><div class="transform hover:scale-125 transition duration-300">
+                        <a href="#" target="blank" class="ml-3 text-blue-400 "><i class="fa-brands fa-twitter"></i></a>
+                    </div></li>
+                    <li><div class="transform hover:scale-125 transition duration-300 mr-8">
+                        <a href="#" target="blank" class="ml-3 text-pink-400 "><i class="fa-brands fa-instagram"></i></a>
+                    </div></li>
+            </div>
+            </nav>
+
+            <div class="mt-5 grid grid-cols-4 ">
+                <div class="block col-span-3  text-black-700  h-8 ml-4 ">
+                    <h1 class="pl-6  text-lg font-bold ">POPULAR  BLOGS</h1>
+                    
+                    <div class="flex mt-2 col-span-2 ">
+                        <div class="relative">
+                            <img class="h-52 w-96 shadow-2xl rounded-lg " src="fifth.jpg" alt="sample bg-black bg-opacity-0">
+                            <span id="fav" class="absolute top-0 right-0 mr-2 mt-2 text-red-600 transform hover:scale-125 transition duration-300 cursor-pointer"onclick="toggleVisibility() ">💛</span>
+                        </div>
+                      
+                        <div class="col-span-1 ml-3 text-black w-44 text-sm">
+                            <p>
+                                "Insightful Musings: A Journey Through Ideas"? This title suggests that your blog will offer deep thoughts and reflections on various topics, taking readers on a journey of exploration and discovery.
+                            </p>
+                            <p class="mt-3 underline underline-offset-4">
+                                by Rishab - March 2024
+                            </p>
+                            <button class=" mt-3 pl-2 pr-2 text-gray-400 text-xs bg-gray-700 rounded-xl hover:bg-gray-900 focus-ring focus:outline-none">Read me</button>
+                        </div>
+                    </div>
+                    
+                    
+
+
+                    
+                    
+
+                </div>
+
+                <div class="col-span-1  text-black-700  h-8 ml-4">
+                    <h1 class="pl-6  text-lg font-bold ">RECENT  BLOGS</h1>
+                    <div class="col-span-1">
+                        <div class="relative">
+                            <img class=" mt-2 h-24 w-44 rounded-lg " src="fourth.jpg">
+                            <span id="fav" class="absolute top-0 right-0 mr-2 mt-2 text-red-600 transform hover:scale-125 transition duration-300 cursor-pointer"onclick="toggleVisibility() ">💛</span>
+                        </div>
+                       
+                        <p class="text-black text-sm">
+                          <a href="#" class="hover:underline">
+                            "Unlocking Creativity: Exploring the Boundaries of Imagination"
+                          </a>  
+                        </p>
+                    </div>
+                    <div class="col-span-1">
+                        <div class="relative">
+                            <img class=" mt-4 h-24 w-44 rounded-lg  " src="sixth.jpg">
+                            <span id="fav" class="absolute top-0 right-0 mr-2 mt-2 text-red-600 transform hover:scale-125 transition duration-300 cursor-pointer"onclick="toggleVisibility() ">💛</span>
+                        </div>
+                      
+                        <p class="text-black text-sm">
+                          <a href="#" class="hover:underline">
+                            "Unlocking Creativity: Exploring the Boundaries of Imagination"
+                          </a> 
+                        </p>
+                    </div>
+
+                    <div class="col-span-1 border-solid rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  h-36 mt-7">
+                        <h1 class="text-white text-center p-4 hover:underline font-bold ">Review Zone</h1>
+
+                        <div >
+                            <ul class="flex place-content-center">
+                                <li class="ml-1 mr-2 transform hover:scale-125 transition duration-300 cursor-pointer">😁</li>
+                                <li class="mr-2 transform hover:scale-125 transition duration-300 cursor-pointer">😊</li>
+                                <li class="mr-2 transform hover:scale-125 transition duration-300 cursor-pointer">😀</li>
+                                <li class="mr-2 transform hover:scale-125 transition duration-300 cursor-pointer">😍</li>
+                            </ul>
+                            <div class=" pl-5">
+                                <input type="text" placeholder="Feedback..." class=" mt-3  rounded-md pl-2">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+    </div>
+
+    <div class="  container2 ml-14 mr-14 mt-60 ">
+        <div class="grid grid-cols-4">
+            
+                <div class=" col-span-3  text-black-700  h-8 ml-4 ">
+                    <h1 class="pl-6  text-lg font-bold ">SCIENCE & TECH BLOGS</h1>
+                </div>
+                <div class="mt-1 flex col-span-3 gap-5 ml-4 mb-10">
+                    <div class="block">
+                        <div class="relative">
+                            <img src="sixth.jpg" class="h-48 w-44 shadow-2xl rounded-lg">
+                            <span id="fav" class="absolute top-0 right-0 mr-2 mt-2 text-red-600 transform hover:scale-125 transition duration-300 cursor-pointer"onclick="toggleVisibility() ">💛</span>
+                            
+                        </div>
+                       
+                        <div class="text-slate-900">
+                            <p class="hover:underline"><a href="#">What lies inside the mysterious</a> </p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="relative">
+                            <img src="seventh.jpg" class="h-48 w-44 shadow-2xl rounded-lg">
+                            <span id="fav" class="absolute top-0 right-0 mr-2 mt-2 text-red-600 transform hover:scale-125 transition duration-300 cursor-pointer " onclick="toggleVisibility() ">💛</span>
+                            
+                        </div>
+                        
+                    <div class="text-slate-900">
+                        <p class="hover:underline"><a href="#">What lies inside the mysterious</a> </p>
+                    </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="relative">
+                            <img src="eight.jpg" class="h-48 w-44 shadow-2xl rounded-lg">
+                            <div class="text-slate-900">
+                                <span id="fav" class="absolute top-0 right-0 mr-2 mt-2 text-red-600 transform hover:scale-125 transition duration-300 cursor-pointer" onclick="toggleVisibility()">💛</span>
+                        </div>
+                        
+                        <p class="hover:underline"><a href="#">What lies inside the mysterious</a> </p>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <!-- Modal HTML -->
+<div id="myModal" class="fixed inset-0 z-50 overflow-auto flex justify-center items-center hidden">
+    <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg p-8 border-4 border-white">
+        <span class="close absolute top-0 right-0 p-2">&times;</span>
+        <p class="text-lg text-white font-bold ">The blog has been added to your favorites!</p>
+    </div>
+</div>
+
+
+
+            
+           
+        </div>
+       
+        <div class="container2 ">
+            <footer class="bg-black text-white py-4">
+                <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+                    <!-- Email Input Section -->
+                    <div class="mb-4 md:mb-0">
+                        <h3 class=" mb-2">Subscribe to our Newsletter</h3>
+                        <form action="#" method="POST" class="flex">
+                            <input type="email" name="email" placeholder="Your Email" class="bg-white text-black px-2 py-2 rounded-l-lg focus:outline-none" required>
+                            <button type="submit" class="bg-gray-300 text-black px-2 py-2 rounded-r-lg hover:bg-gray-400 focus:outline-none">Subscribe</button>
+                        </form>
+                    </div>
+                    <!-- Social Icons -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- Contact Us -->
+                    <div class="text-center mt-6 md:mt-0">
+                        <h3 class=" mb-2">Contact Us</h3>
+                        <p>Email: contact@example.com</p>
+                        <p>Phone: +1234567890</p>
+                    </div>
+                </div>
+            </footer>
+            
+            
+        </div>
+    
+</body>
+</html>

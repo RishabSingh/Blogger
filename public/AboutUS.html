@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Your Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/3243699c0d.js" crossorigin="anonymous"></script>
+    <style>
+        /* Custom styles can go here */
+    </style>
+</head>
+<body class="font-body bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-gray-900">
+
+    
+    <nav class=" flex justify-between mr-10 ml-10">
+        <div id="icon">
+            <h1 class="text-white font-bold p-2 text-xs underline underline-offset-2">BLOGGER</h1>
+        </div>
+        <div class="nav-links md:static md:min-h-fit absolute  min-h-[10vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-4 h-fit   md:flex-grow text-black-400   ">
+            <ul class=" flex md:flex-row flex-col md:p-2  h-full text-xs md:pl-14 gap-2 text-white">
+                <li class="md:pl-2 hover:underline"><a href="http://127.0.0.1:5502/public/login.html">HOME</a></li>
+                <li class="md:pl-2 hover:underline" ><a href="http://127.0.0.1:5502/public/Allblog.html">BLOG</a></li>
+                <li class="md:pl-2 hover:underline"><a href="http://127.0.0.1:5502/public/AboutUS.html">ABOUT</a></li>
+                <li class="md:pl-2 hover:underline"><a href="http://127.0.0.1:5502/public/contact.html">CONTACT</a></li>
+           </ul>
+        </div>
+
+        
+    </nav>
+
+   
+    <div class="container mx-auto mt-8 px-4">
+
+        <h1 class="text-3xl font-bold mb-4">About Us</h1>
+
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2 md:mr-4">
+                <img src="about.jpg" alt="About Us Image" class="w-full h-auto rounded-lg mb-4">
+            </div>
+            <div class="md:w-1/2">
+                <p class="mb-4">Welcome to Your Blog, a sanctuary for those who revel in the beauty of words and the power they hold. Our journey began with a simple yet profound belief: that storytelling transcends boundaries, connecting us in ways that defy distance and difference. Here, amidst the digital expanse, we've cultivated a haven where diverse voices converge to share their narratives, wisdom, and passions.
+
+                    At Your Blog, we are dedicated to curating a tapestry of content that both captivates and enriches our readers. Whether you seek thought-provoking insights, compelling narratives, or practical advice, our platform offers a plethora of articles spanning an array of topics. From the latest trends in technology to timeless reflections on the human experience, our community of writers delivers a kaleidoscope of perspectives to engage and inspire.
+                    
+                    </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="container2 ">
+        <footer class="bg-black text-white py-4">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+                <!-- Email Input Section -->
+                <div class="mb-4 md:mb-0">
+                    <h3 class=" mb-2">Subscribe to our Newsletter</h3>
+                    <form action="#" method="POST" class="flex">
+                        <input type="email" name="email" placeholder="Your Email" class="bg-white text-black px-2 py-2 rounded-l-lg focus:outline-none" required>
+                        <button type="submit" class="bg-gray-300 text-black px-2 py-2 rounded-r-lg hover:bg-gray-400 focus:outline-none">Subscribe</button>
+                    </form>
+                </div>
+                <!-- Social Icons -->
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <!-- Contact Us -->
+                <div class="text-center mt-6 md:mt-0">
+                    <h3 class=" mb-2">Contact Us</h3>
+                    <p>Email: contact@example.com</p>
+                    <p>Phone: +1234567890</p>
+                </div>
+            </div>
+        </footer>
+        
+        
+    </div>
+    
+
+</body>
+</html>

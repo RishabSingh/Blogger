@@ -10,3 +10,7 @@ function toggleVisibility() {
 
 // Call the toggleVisibility function to show the modal
 toggleVisibility();
+
+
+
+
